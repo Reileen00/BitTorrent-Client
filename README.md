@@ -45,12 +45,11 @@ Peer id is simply the id of a peer on the network.
 
 <p>
 How Bencode works:
-<ul>
-<li>integer = i<integer>e </li>
-<li>byte string = <length>:<contents> </li>
-<li>lists = l<elements>e </li>
-<li>dictionaries = d<pairs>e </li>
-</ul>
+- `integer = i<integer>e`
+- `byte string = <length>:<contents>`
+- `lists = l<elements>e`
+- `dictionaries = d<pairs>e`
+
 </p>
 
 <p>
