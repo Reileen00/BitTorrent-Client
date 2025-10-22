@@ -18,7 +18,7 @@ I will briefly describe how I understand the things:
 <li>The list of peers who own pieces of the file is maintained on an entity called the 'Tracker'.</li>
 <li>So we first request this list from the Tracker and then proceed to request file pieces from these particular set of peers.</li>
 <li>Then assemble these pieces into a single file and (disconnect) from the Network!</li>
-<ul>
+</ul>
 
 <ul>
 <li>The user starts with a .torrent file or a magnet URI . We are expected to extract the info hash from this.</li>
