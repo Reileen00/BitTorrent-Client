@@ -81,9 +81,23 @@ The nine different types of messages:
 <li>1-unchoke</li>
 <li>2-interested</li>
 <li>3-not interested</li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+<li>4-have : A single number which is the index of the piece that the downloader just received and checked the info hash of.</li>
+<li>5-bitfield : The contents correspond to the indices of the pieces of the file that a particular peer owns.</li>
+<li>6-request : A request for a piece. It contains-length,type,index,begin,length (* each piece is requested in blocks)</li>
+<li>7-piece : a response to the request message.</li>
+<li>8-cancel : It contains-length,type,index,offset,length</li>
 </ul>
 </p>
+
+<p>Chocking is an algorithm that blocks peers that are leeching.It is basically a tit-for-tat algorithm. It allows you to download from the network only if you contribute to the network.Kinda like upload speed is kept similar to download speed maybe..
+</p>
+
+<p>
+The BitTorrent Protocol!
+
+<ul>
+<li>If the user is  and the peer is interested , we................ </li>
+</ul>
+</p>
+
+<p>Finally assemble the blocks and pieces</p>
