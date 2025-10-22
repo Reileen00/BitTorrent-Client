@@ -76,6 +76,7 @@ Validity of a handshake:
 
 <p>
 The nine different types of messages:
+<ul>
 <li>0-choke</li>
 <li>1-unchoke</li>
 <li>2-interested</li>
@@ -84,4 +85,5 @@ The nine different types of messages:
 <li></li>
 <li></li>
 <li></li>
+</ul>
 </p>
