@@ -89,5 +89,15 @@ The nine different types of messages:
 </ul>
 </p>
 
-<p>Chocking is an algorithm that blocks peers that are leeching.
+<p>Chocking is an algorithm that blocks peers that are leeching.It is basically a tit-for-tat algorithm. It allows you to download from the network only if you contribute to the network.Kinda like upload speed is kept similar to download speed maybe..
 </p>
+
+<p>
+The BitTorrent Protocol!
+
+<ul>
+<li>If the user is  and the peer is interested , we................ </li>
+</ul>
+</p>
+
+<p>Finally assemble the blocks and pieces</p>
