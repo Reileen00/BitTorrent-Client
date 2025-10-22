@@ -20,3 +20,20 @@ I will briefly describe how I understand the things:
 <li>Then assemble these pieces into a single file and (disconnect) from the Network!</li>
 <ul>
 
+<ul>
+<li>The user starts with a .torrent file or a magnet URI . We are expected to extract the info hash from this.</li>
+<li>Then we request peerlist from the 'Tracker' by sending this infohash-details.</li>
+</ul>
+
+To elaborate how the requesting procedure should take place :-
+<ul>
+<li>If the user already has a .torrent file with them , then the client has to decode the Bencoded dictionary and then make a request to the announce URL</li>
+<li>Else if the user has a magnet URI then-
+<ul>
+<li>If neither address tracker nor the peers are present then we have to proceed to download directly from any acceptable source or else we return a failure message</li>
+<li>If address tracker is absent but list of peers is available then we can simply go ahead and make a request to every peer for the file pieces</li>
+<li>If the address tracker is present then we should go ahead and fetch the (array of) trackers in parameter tr and send a request to each of these tr URLs.</li>
+</ul>
+</li>
+<li>Lastly choose a peer to connect to</li>
+</ul>
