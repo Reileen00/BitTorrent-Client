@@ -57,3 +57,31 @@ How Bencode works:
 <p>
 Both .torrent file and the magnet URI contain info hash and peer id. Only the .torrent file consists of the announce(url of tracker). And only the magnet URI contains the address tracker, peer,acceptable source and so on...
 </p>
+
+<p>
+Handshaking policy:
+The client chooses a peer and then has to send and receive a handshake.
+In case the handshake received is invalid , the connection gets severed else the client needs to keep up the connection by sending keep-alive messages at every time interval.
+</p>
+
+<p>
+Validity of a handshake:
+<ul>
+<li>The first byte should be correct</li>
+<li>The bit-torrent protocol should be correct</li>
+<li>The hash info encoded by sha-1 should match with the encoding at the origin</li>
+<li>The peer id should be valid</li>
+</ul>
+</p>
+
+<p>
+The nine different types of messages:
+<li>0-choke</li>
+<li>1-unchoke</li>
+<li>2-interested</li>
+<li>3-not interested</li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</p>
