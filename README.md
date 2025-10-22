@@ -37,3 +37,22 @@ To elaborate how the requesting procedure should take place :-
 </li>
 <li>Lastly choose a peer to connect to</li>
 </ul>
+
+<p>
+Info hash is sha-1 encoding of a part of the contents of the .torrent file.
+Peer id is simply the id of a peer on the network.
+</p>
+
+<p>
+How Bencode works:
+<ul>
+<li>integer = i<integer>e </li>
+<li>byte string = <length>:<contents> </li>
+<li>lists = l<elements>e </li>
+<li>dictionaries = d<pairs>e </li>
+</ul>
+</p>
+
+<p>
+Both .torrent file and the magnet URI contain info hash and peer id. Only the .torrent file consists of the announce(url of tracker). And only the magnet URI contains the address tracker, peer,acceptable source and so on...
+</p>
