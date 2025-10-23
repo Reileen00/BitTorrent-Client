@@ -103,4 +103,4 @@ The BitTorrent Protocol!
 
 <p>Finally assemble the blocks and pieces</p>
 
-## DAY-2 : 
+## DAY-2 : How the fuck do I implement this shit!
