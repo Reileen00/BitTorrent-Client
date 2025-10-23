@@ -1,5 +1,6 @@
 # BitTorrent-Client
 
+## DAY-1 : Decoding the magic behind a BitTorrent Client
 <p>
 I am trying to implement a BitTorrent Client from scratch .This attempt uses C++ language. I will keep 
 documenting the implementation details in this markdown file.
@@ -101,3 +102,5 @@ The BitTorrent Protocol!
 </p>
 
 <p>Finally assemble the blocks and pieces</p>
+
+## DAY-2 : 
